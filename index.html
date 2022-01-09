@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="/scripts/Calculator.js"></script>
+    <script src="/scripts/Display.js"></script>
+    <script src="/scripts/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="calculator-container">
+            <div class="display">
+                <div id="current-value"></div>
+                <div id="previous-value"></div>
+            </div>
+            <div class="calculator-functions">
+                <div class="rest-function">
+                    <button class="operationsRoot" value="squareRoot">2√</button>
+                    <button class="operationsRoot" value="cubicRoot">3√</button>
+                    <button class="operations" value="powerByX">Xⁿ</button>
+                    <button class="operations" value="divide">%</button>
+                    <button class="operations" value="multiply">X</button>
+                    <button onclick="display.cleanedAll()">C</button>
+                </div>
+                <div class="calculator-numbers">
+                    <button class="number">8</button>
+                    <button class="number">7</button>
+                    <button class="number">9</button>
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="number">0</button>
+                    <button class="number">.</button>
+                </div>
+                <div class="pincipal-functions">
+                    <button onclick="display.erase()">Borrar</button>
+                    <button class="operations" value="subtract">-</button>
+                    <button class="operations" value="add">+</button>
+                    <button class="operations" value="equal">=</button>
+                </div>
+            </div>
+            
+            
+        </div>
+    </main>
+</body>
+</html>
