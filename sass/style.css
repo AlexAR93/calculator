@@ -1,0 +1,109 @@
+main {
+  margin: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .calculator-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 3fr;
+  justify-content: space-around;
+  align-content: center;
+  border: outset #f2f2f2 2px;
+  background: #f2f2f2;
+}
+main .calculator-container .display {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 0 5px #d6c0c0;
+  display: flex;
+  flex-direction: column;
+}
+main .calculator-container .display .display-value {
+  position: absolute;
+  font-size: 10rem;
+}
+main .calculator-container .calculator-functions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25% 75%;
+  justify-content: center;
+}
+main .calculator-container .calculator-functions .rest-function {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+main .calculator-container .calculator-functions .rest-function button {
+  border: none;
+  background: unset;
+  font-weight: bold;
+}
+main .calculator-container .calculator-functions .rest-function button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .calculator-container .calculator-functions .rest-function button:hover {
+  box-shadow: 0 0 5px #818181;
+}
+main .calculator-container .calculator-functions .pincipal-functions {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+main .calculator-container .calculator-functions .pincipal-functions button {
+  border: none;
+  background: unset;
+  font-weight: bold;
+}
+main .calculator-container .calculator-functions .pincipal-functions button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .calculator-container .calculator-functions .pincipal-functions button:hover {
+  box-shadow: 0 0 5px #818181;
+}
+main .calculator-container .calculator-functions .calculator-numbers {
+  background: #fff;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+main .calculator-container .calculator-functions .calculator-numbers button {
+  border: none;
+  background: unset;
+  font-weight: bold;
+}
+main .calculator-container .calculator-functions .calculator-numbers button {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .calculator-container .calculator-functions .calculator-numbers button:hover {
+  box-shadow: 0 0 5px #f888;
+}
+
+/*# sourceMappingURL=style.css.map */
